@@ -30,7 +30,7 @@ jobs:
         # Enable GitHub workflow to upload a zipfile of source.
         # polaris_assessment_mode: "SOURCE_UPLOAD"
         polaris_prComment_enabled: 'true'
-        polaris_prComment_severities: ['high','critical','medium']
+        polaris_prComment_severities: 'high,critical,medium'
         polaris_reports_sarif_create: 'true'
         polaris_upload_sarif_report: 'true'
         github_token: ${{ secrets.MY_TOKEN }}
