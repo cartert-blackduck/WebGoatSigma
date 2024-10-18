@@ -33,6 +33,9 @@ jobs:
         polaris_prComment_severities: 'high,critical,medium'
         polaris_reports_sarif_create: 'true'
         polaris_upload_sarif_report: 'true'
+        coverity_build_command: mvn -B install
+        coverity_clean_command: mvn -B clean
+        coverity_args: -o analyze.aggressiveness-level=high
         github_token: ${{ secrets.MY_TOKEN }}
         # include_diagnostics: true
     - name: Save Logs
